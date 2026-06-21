@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![pytest](https://img.shields.io/badge/tested%20with-pytest-orange)
 
-This is my first Python-based API test automation framework, built after completing five Java automation frameworks — Selenium, REST Assured, Cucumber, JMeter, and Playwright. The goal was to understand how familiar automation concepts translate into Python's ecosystem and to build something structured enough to be defensible in a technical interview.
+This is my first Python-based API test automation framework, built after completing five Java automation frameworks — Selenium, REST Assured, Cucumber, JMeter, and Playwright. The goal was to understand how familiar automation concepts translate into Python's ecosystem and to build something structured.
 
 The framework runs against JSONPlaceholder (https://jsonplaceholder.typicode.com), a free public REST API that simulates a real backend with users, posts, and comments. No authentication or local server setup is required, which made it a practical choice for focusing on framework architecture rather than environment configuration.
 
