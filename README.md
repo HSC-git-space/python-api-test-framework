@@ -42,7 +42,7 @@ Python is the dominant language across AI and ML tooling, making it an important
 
 ## Why requests
 
-The requests library is lightweight, mature, and widely adopted in Python API testing. It integrates naturally with pytest fixtures and provides a clean interface for managing sessions, headers, and timeouts. It was the straightforward choice — well documented, no unnecessary abstraction, and the closest Python equivalent to what REST Assured provides in Java.
+The requests library is lightweight, mature, and widely adopted in Python API testing. It integrates naturally with pytest fixtures and provides a clean interface for managing sessions, headers, and timeouts. It was the straightforward choice  well documented, no unnecessary abstraction, and the closest Python equivalent to what REST Assured provides in Java.
 
 ## Architecture
 
@@ -93,7 +93,7 @@ Each layer has a single responsibility. Tests do not know how HTTP calls are mad
 ## Design Decisions
 
 **Why a base client?**
-I did not want to repeat base URL, headers, and timeout in every test. BaseClient sets those once and every endpoint class inherits from it. Same reasoning as SpecBuilder in REST Assured — configure once, reuse everywhere. If the base URL changes, one file changes.
+I did not want to repeat base URL, headers, and timeout in every test. BaseClient sets those once and every endpoint class inherits from it. Same reasoning as SpecBuilder in REST Assured  configure once, reuse everywhere. If the base URL changes, one file changes.
 
 **Why Pydantic?**
 In Java I used POJOs to map API responses. Pydantic does the same but also validates field types automatically. If the API returns a string where an integer is expected, Pydantic throws before my assertion even runs. This provides stronger validation guarantees than a plain POJO.
