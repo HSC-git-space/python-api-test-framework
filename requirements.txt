@@ -1,0 +1,6 @@
+pytest
+requests
+pydantic
+jsonschema
+pytest-html
+allure-pytest
